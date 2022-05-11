@@ -1,0 +1,196 @@
+{%load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Company Bootstrap Template - Index</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="{% static "img/favicon.png"%}" rel="icon">
+  <link href="{% static "img/apple-touch-icon.png"%}" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static "vendor/bootstrap/css/bootstrap.min.css"%}" rel="stylesheet">
+  <link href="{% static "vendor/icofont/icofont.min.css"%}" rel="stylesheet">
+  <link href="{% static "vendor/animate.css/animate.min.css"%}" rel="stylesheet">
+  <link href="{% static "vendor/venobox/venobox.css"%}" rel="stylesheet">
+  <link href="{% static "vendor/owl.carousel/assets/owl.carousel.min.css"%}" rel="stylesheet">
+  <link href="{% static "vendor/aos/aos.css"%}" rel="stylesheet">
+  <link href="{% static "vendor/remixicon/remixicon.css"%}" rel="stylesheet">
+  <link href="{% static "vendor/boxicons/css/boxicons.min.css"%}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="{% static "css/style.css"%}" rel="stylesheet">
+  <link href="{% static "css/style1.css"%}" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- =======================================================
+  * Template Name: Company - v2.2.1
+  * Template URL: https://bootstrapmade.com/company-free-html-bootstrap-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center">
+      <img src="{% static "img/logo.jpeg"%}" width="7%" style="border-radius: 5%;">
+<!--
+      <h1 class="logo mr-auto"><a href="index.html" style="margin-right:30px">
+        <span>Com</span>pany</a></h1>
+       Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav class="nav-menu d-none d-lg-block">
+        <ul>
+          <li><a href="{% url 'home'%}">Home</a></li>
+          <li class="active"><a href="{%url 'about'%}">About Us</a></li>
+          
+          <li class="drop-down"><a href="{% url 'management' %}">management</a>
+            <ul>
+              
+              <li><a href="{% url 'aboutsociety' %}">about society</a></li>
+              <li><a href="{% url 'vision' %}">vision and mission </a></li>
+            </ul>
+          </li>
+
+
+          <li class="drop-down"><a href="{% url 'services' %}">Services </a>
+            <ul>
+                <li><a href="{% url 'activities' %}">Activites</a></li>
+                <li><a href="{% url 'recent_activities'%}">Recent activites</a></li>
+                <li><a href="{% url 'upcoming_activities'%}">upcoming activites </a></li>
+                <li><a href="{% url 'members'%}">Member</a></li>
+                <li><a href="{% url 'terms'%}">Terms and conditons  </a></li>
+              </ul>
+          </li>
+          
+          <li><a href="{% url 'notifications' %}">Notifications </a></li>
+          
+          <li><a href="{% url 'contact' %}">ContactUs</a></li>
+
+        </ul>
+      </nav><!-- .nav-menu -->
+
+     <div class="nav-item dropdown">
+        <a href="#" data-toggle="dropdown" class="nav-item nav-link dropdown-toggle user-action">
+    <img src="{% static "img/acc.jpg"%}" class="avatar" alt="Avatar" width="40px" height="40px"><b class="caret"></b></a>
+        <div class="dropdown-menu">
+          <a href="#" class="dropdown-item"><i class="fa fa-user-o"></i> Profile</a>
+          <a href="#" class="dropdown-item"><i class="fa fa-calendar-o"></i> Calendar</a>
+          <a href="#" class="dropdown-item"><i class="fa fa-sliders"></i> Settings</a>
+          <div class="divider dropdown-divider"></div>
+          <a href="{% url 'logout'%}" class="dropdown-item"><i class="material-icons"></i> Logout</a>
+        </div>
+      </div>
+
+    </div>
+  </header><!-- End Header -->
+ <section id="breadcrumbs" class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <ol>
+            <li><a href="{% url 'home' %}">Home</a></li>
+            <li>Notifications</li>
+          </ol>
+        </div>
+
+      </div>
+    </section>
+    <br>
+<div class="container">
+  <div class="card float-left">
+    <div class="row">
+
+      <div class="col-sm-7">
+        <div class="card-block"><br>
+          <!--           <h4 class="card-title">Small card</h4> -->
+          <p>Name</p>
+          <i class="fa fa-calendar" aria-hidden="true">Date</i>
+          <i class="fa fa-clock-o" aria-hidden="true">Time</i><br><br>
+          <a href="#" class="btn btn-primary btn-sm">Read More</a>
+        </div>
+      </div>
+
+      <div class="col-sm-5">
+        <img class="d-block w-100" src="https://picsum.photos/150?image=380" alt="">
+      </div>
+    </div>
+  </div>
+
+ 
+    <div class="card float-right">
+      <div class="row">
+        <div class="col-sm-5">
+          <img class="d-block w-100" src="https://picsum.photos/150?image=641" alt="">
+        </div>
+        <div class="col-sm-7">
+          <div class="card-block"><br>
+          <!--           <h4 class="card-title">Small card</h4> -->
+          <p>Name</p>
+          <i class="fa fa-calendar" aria-hidden="true">Date</i>
+          <i class="fa fa-clock-o" aria-hidden="true">Time</i><br><br>
+          <a href="#" class="btn btn-primary btn-sm">Read More</a>
+        </div>
+        </div>
+ 
+      </div>
+    </div>
+     <div class="card float-left">
+      <div class="row">
+        <div class="col-sm-5">
+          <img class="d-block w-100" src="https://picsum.photos/150?image=641" alt="">
+        </div>
+        <div class="col-sm-7">
+          <div class="card-block"><br>
+          <!--           <h4 class="card-title">Small card</h4> -->
+          <p>Name</p>
+          <i class="fa fa-calendar" aria-hidden="true">Date</i>
+          <i class="fa fa-clock-o" aria-hidden="true">Time</i><br><br>
+          <a href="#" class="btn btn-primary btn-sm">Read More</a>
+        </div>
+        </div>
+ 
+      </div>
+    </div>
+    <div class="card float-right">
+    <div class="row">
+
+      <div class="col-sm-7">
+        <div class="card-block"><br>
+          <!--           <h4 class="card-title">Small card</h4> -->
+          <p>Name</p>
+          <i class="fa fa-calendar" aria-hidden="true">Date</i>
+          <i class="fa fa-clock-o" aria-hidden="true">Time</i><br><br>
+          <a href="#" class="btn btn-primary btn-sm">Read More</a>
+        </div>
+      </div>
+
+      <div class="col-sm-5">
+        <img class="d-block w-100" src="https://picsum.photos/150?image=380" alt="">
+      </div>
+    </div>
+  </div>
+
+
+  </div>
+ 
+ <br>
+<br>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js'></script>
+</body>
+</html>
